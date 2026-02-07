@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff9a9e, #a18cd1);
+      }
+
+      /* NAVBAR */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        color: white;
+      }
+
+      nav h2 {
+        margin: 0;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* HERO SECTION */
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 40px;
+        color: white;
+        flex-wrap: wrap;
+      }
+
+      .hero-text {
+        max-width: 500px;
+      }
+
+      .hero-text h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hero-text button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        border: none;
+        background-color: #ffffff;
+        color: #6a1b9a;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .hero img {
+        width: 320px;
+        border-radius: 15px;
+      }
+
+      /* SECTIONS */
+      section {
+        background-color: white;
+        margin: 30px;
+        padding: 40px;
+        border-radius: 12px;
+
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 0.8s ease;
+      }
+
+      section.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      /* PROJECTS */
+      #projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .project {
+        background: #f3f3f3;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .project img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      /* CONTACT */
+      .contact-box p {
+        margin: 8px 0;
+        font-size: 16px;
+      }
+
+      .contact-box a {
+        color: #6a1b9a;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <h2>Online Portfolio</h2>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO (MODEL STYLE) -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Nivetha Shanmugam</h1>
+        <p>
+          Hi, I am an aspiring Frontend Developer passionate about creating
+          responsive, user-friendly and visually engaging web applications using
+          modern technologies.
+        </p>
+        <button>Hire Me</button>
+      </div>
+
+      <img src="Profile.jpeg" alt="Profile Image" />
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a motivated web developer with hands-on experience in HTML, CSS,
+        and JavaScript. I enjoy converting ideas into functional and visually
+        appealing websites.
+      </p>
+      <p>
+        Through internships and personal projects, I have developed strong
+        problem-solving skills and a continuous learning mindset. My goal is to
+        grow as a frontend developer in a dynamic tech environment.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript (Basics)</li>
+        <li>Responsive Web Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
+      <div id="projects">
+        <div class="project">
+          <img src="C.png" />
+          <h3>Calculator</h3>
+          <p>Simple calculator using HTML, CSS & JS.</p>
+        </div>
+
+        <div class="project">
+          <img src="Q.png" />
+          <h3>Online Quiz</h3>
+          <p>Quiz application with instant results.</p>
+        </div>
+
+        <div class="project">
+          <img src="EC.png" />
+          <h3>E-Commerce</h3>
+          <p>Product listing website with cart concept.</p>
+        </div>
+      </div>
+    </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="Nivetha Resume 2.pdf" download>Download My Resume</a>
+    </section>
+    <!-- CONTACT (MORE DETAILS) -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-box">
+        <p>
+          📧 Email:
+          <a href="mailto:nivetha677777@gmail.com">nivetha677777@gmail.com</a>
+        </p>
+        <p>📱 Phone: +91 98765 43210</p>
+        <p>
+          💻 GitHub:
+          <a
+            href="https://github.com/shannivetha627-tech/E-commerce-website-2/blob/main/index.html"
+            target="_blank"
+            >github.com/yourgithub</a
+          >
+        </p>
+        <p>
+          🔗 LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/nivetha-shanmugam-267027382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            >linkedin.com/in/yourlinkedin</a
+          >
+        </p>
+        <p>📍 Location: India</p>
+      </div>
+    </section>
+
+    <footer>© 2026 Nivetha Shanmugam</footer>
+
+    <!-- SCROLL ANIMATION -->
+    <script>
+      const sections = document.querySelectorAll("section");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.2 },
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    </script>
+  </body>
+</html>
